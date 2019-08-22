@@ -12,5 +12,13 @@ public class PhoneTest {
     // 创建手机
     Phone phone = store.createPhone();
     System.out.println("创建" + phone + "手机完成");
+    // 新增vivo手机
+    store = new Store(new VivoPhoneFactory());
+    // 创建手机
+    phone = store.createPhone();
+    System.out.println("创建" + phone + "手机完成");
+
+
+
   }
 }
