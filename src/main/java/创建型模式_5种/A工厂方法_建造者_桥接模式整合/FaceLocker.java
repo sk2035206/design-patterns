@@ -8,7 +8,7 @@ public class FaceLocker implements Locker {
 
   @Override
   public void unlock() {
-    System.out.println("面部解锁");
+    System.out.println("创建面部解锁");
   }
 
   @Override

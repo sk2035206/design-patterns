@@ -8,7 +8,7 @@ public class SimpleCharger implements Charger {
 
   @Override
   public void charge() {
-    System.out.println("快速冲电");
+    System.out.println("创建快速冲电");
   }
 
   @Override

@@ -15,8 +15,7 @@ public class Store {
   }
 
   /** 创建手机 */
-  public void createPhone() {
-    Phone phone = phoneFactory.createPhone();
-    System.out.println("创建" + phone + "手机完成");
+  public Phone createPhone() {
+    return phoneFactory.createPhone();
   }
 }

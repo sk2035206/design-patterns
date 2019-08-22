@@ -11,11 +11,16 @@ public class ApplePhoneBuilder implements PhoneBuilder {
 
   @Override
   public void buildCharger() {
-    phone.setCharger(new SimpleCharger());
+    Charger simpleCharger =  new SimpleCharger();
+    simpleCharger.charge();
+    phone.setCharger(simpleCharger);
   }
 
   @Override
   public void buildLocker() {
+    Locker fingerprintLocker = new FingerprintLocker();
+    fingerprintLocker.unlock();
+    phone.setLocker(fingerprintLocker);
     phone.setLocker(new FingerprintLocker());
   }
 

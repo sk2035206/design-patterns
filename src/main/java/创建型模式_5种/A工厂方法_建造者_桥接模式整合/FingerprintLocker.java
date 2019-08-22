@@ -8,7 +8,7 @@ public class FingerprintLocker implements Locker {
 
   @Override
   public void unlock() {
-    System.out.println("指纹解锁");
+    System.out.println("创建指纹解锁");
   }
 
   @Override

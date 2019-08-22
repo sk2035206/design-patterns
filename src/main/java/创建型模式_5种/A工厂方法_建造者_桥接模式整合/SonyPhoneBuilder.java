@@ -11,12 +11,16 @@ public class SonyPhoneBuilder implements PhoneBuilder {
 
   @Override
   public void buildCharger() {
-    phone.setCharger(new QuickCharger());
+    Charger quickCharger =  new QuickCharger();
+    quickCharger.charge();
+    phone.setCharger(quickCharger);
   }
 
   @Override
   public void buildLocker() {
-    phone.setLocker(new FaceLocker());
+    Locker faceLocker = new FaceLocker();
+    faceLocker.unlock();
+    phone.setLocker(faceLocker);
   }
 
   @Override
