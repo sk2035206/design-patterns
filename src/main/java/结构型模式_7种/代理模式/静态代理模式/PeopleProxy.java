@@ -25,10 +25,10 @@ public class PeopleProxy implements BuyCar {
     }
     // 判断余额是否足够买车
     if (people.getMoney() >= 50000) {
-      System.out.println(people.getUsername() + "买了新车，交易结束！");
+      System.out.println(people.getUsername() + "买了新车，交易结束！\n");
       return;
     }
-    System.out.println(people.getUsername() + "钱不够，不能买车，继续比赛！");
+    System.out.println(people.getUsername() + "钱不够，不能买车，继续比赛！\n");
   }
 
 }

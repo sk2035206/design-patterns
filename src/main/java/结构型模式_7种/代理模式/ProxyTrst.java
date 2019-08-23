@@ -1,5 +1,6 @@
 package 结构型模式_7种.代理模式;
 
+import 结构型模式_7种.代理模式.CGLib代理.CgLibProxy;
 import 结构型模式_7种.代理模式.动态代理模式.MyInvocationHandler;
 import 结构型模式_7种.代理模式.静态代理模式.PeopleProxy;
 
@@ -33,7 +34,6 @@ public class ProxyTrst {
     people3.setUsername("王五");
     people3.setVip(true);
     MyInvocationHandler dph = new MyInvocationHandler(people3);
-    // 生成动态代理类实例
     BuyCar buyCar = dph.getProxy();
     buyCar.buyMyCar();
     // 动态代理用户赵六
@@ -41,8 +41,21 @@ public class ProxyTrst {
     people4.setUsername("赵六");
     people4.setMoney(30000.00);
     dph = new MyInvocationHandler(people4);
-    // 生成动态代理类实例
     buyCar = dph.getProxy();
+    buyCar.buyMyCar();
+    // CgLib代理用户小明
+    People people5 = new People();
+    people5.setUsername("小明");
+    people5.setVip(true);
+    CgLibProxy cgLibProxy = new CgLibProxy(people5);
+    buyCar = cgLibProxy.getProxy();
+    buyCar.buyMyCar();
+    // CgLib代理用户小红
+    People people6 = new People();
+    people6.setUsername("小红");
+    people6.setMoney(30000.00);
+    cgLibProxy = new CgLibProxy(people6);
+    buyCar = cgLibProxy.getProxy();
     buyCar.buyMyCar();
 
   }

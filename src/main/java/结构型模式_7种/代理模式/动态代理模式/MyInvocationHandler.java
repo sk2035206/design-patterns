@@ -19,6 +19,10 @@ public class MyInvocationHandler implements InvocationHandler {
   /** 代理实例*/
   private Object target;
 
+  /**
+   * @param target 代理对象实例
+   * 设置代理实例
+   */
   public MyInvocationHandler(Object target) {
     this.target = target;
   }
@@ -35,18 +39,18 @@ public class MyInvocationHandler implements InvocationHandler {
 
   @Override
   public Object invoke(Object proxy, Method method, Object[] args) {
-    System.out.println("---------------开始代理---------------");
+    System.out.println("\n---------------开始JDK动态代理---------------");
     Object result = null;
     if (method.getName().equalsIgnoreCase("buyMyCar")) {
       People people = (People) target;
       // 判断是否为vip，是则可以直接买车,否则判断余额是否足够买车
       if (people.getVip() == null && people.getMoney() >= 50000) {
         System.out.println(people.getUsername() + "买了新车，交易结束！");
-        System.out.println("---------------代理结束---------------");
+        System.out.println("---------------JDK动态代理结束---------------\n");
         return result;
       } else if (people.getVip() == null && people.getMoney() <= 50000) {
         System.out.println(people.getUsername() + "钱不够，不能买车，继续挣钱！");
-        System.out.println("---------------代理结束---------------");
+        System.out.println("---------------JDK动态代理结束---------------\n");
         return result;
       }
     }
@@ -62,7 +66,7 @@ public class MyInvocationHandler implements InvocationHandler {
       System.err.println("此处接收被调用方法内部未被捕获的异常");
       e.printStackTrace();
     }
-    System.out.println("---------------代理结束---------------");
+    System.out.println("---------------JDK动态代理结束---------------\n");
     return result;
   }
 }
