@@ -1,7 +1,6 @@
 package 结构型模式_7种.代理模式.动态代理模式;
 
 import 结构型模式_7种.代理模式.People;
-
 import java.lang.reflect.InvocationHandler;
 import java.lang.reflect.InvocationTargetException;
 import java.lang.reflect.Method;

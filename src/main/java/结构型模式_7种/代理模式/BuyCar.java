@@ -7,5 +7,5 @@ package 结构型模式_7种.代理模式;
 public interface BuyCar {
 
   /** 买车 */
-  public void buyMyCar();
+  void buyMyCar();
 }
