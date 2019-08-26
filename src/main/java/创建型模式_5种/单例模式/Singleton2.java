@@ -11,9 +11,10 @@ public class Singleton2 {
   private Singleton2() {}
 
   /** 初始化时直接创建对象 */
-  private static final Singleton2 singleton  = new Singleton2();
+  private static final Singleton2 SINGLETON  = new Singleton2();
+
   public static final Singleton2 getInstance() {
     System.out.println("获取到单例对象Singleton2");
-    return singleton;
+    return SINGLETON;
   }
 }

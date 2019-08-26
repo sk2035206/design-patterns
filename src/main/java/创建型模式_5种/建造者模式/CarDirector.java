@@ -12,7 +12,7 @@ public class CarDirector {
    * @param carBuilder 汽车建造类
    * @return 构建的汽车
    */
-  public Car CarDirector(CarBuilder carBuilder) {
+  public Car carDirector(CarBuilder carBuilder) {
     // 构建车架
     carBuilder.buildFrame();
     // 构建轮胎

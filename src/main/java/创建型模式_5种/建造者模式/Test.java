@@ -14,11 +14,11 @@ public class Test{
     // 实例化构建汽车对象
     CarDirector carDirector = new CarDirector();
     // 分别构建宝马和奔驰车
-    Car bmw = carDirector.CarDirector(new BmwBuilder());
+    Car bmw = carDirector.carDirector(new BmwBuilder());
     System.out.println("-----------------------------");
-    Car benz = carDirector.CarDirector(new BenzBuilder());
+    Car benz = carDirector.carDirector(new BenzBuilder());
     System.out.println("-----------------------------");
-    Car div = carDirector.CarDirector(new DivBuilder());
+    Car div = carDirector.carDirector(new DivBuilder());
     System.out.println(div);
   }
 }

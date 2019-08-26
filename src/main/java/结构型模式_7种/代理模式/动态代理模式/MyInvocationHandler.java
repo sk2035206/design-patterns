@@ -41,7 +41,7 @@ public class MyInvocationHandler implements InvocationHandler {
   public Object invoke(Object proxy, Method method, Object[] args) {
     System.out.println("\n---------------开始JDK动态代理---------------");
     Object result = null;
-    if (method.getName().equalsIgnoreCase("buyMyCar")) {
+    if ("buyMyCar".equalsIgnoreCase(method.getName())) {
       People people = (People) target;
       // 判断是否为vip，是则可以直接买车,否则判断余额是否足够买车
       if (people.getVip() == null && people.getMoney() >= 50000) {
