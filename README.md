@@ -1,4 +1,4 @@
-本文主要参考博客地址：http://blog.csdn.net/jason0539
+本文主要参考博客地址：https://blog.csdn.net/jason0539/article/details/44956775
 
 设计模式分为三大类：
 
