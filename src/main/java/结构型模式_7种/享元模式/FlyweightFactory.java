@@ -3,7 +3,7 @@ package 结构型模式_7种.享元模式;
 import java.util.Hashtable;
 
 /**
- *  模式工厂类
+ *  享元模式类
  * @author sk
  */
 public class FlyweightFactory{
