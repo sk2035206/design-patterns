@@ -6,8 +6,10 @@ package 创建型模式_5种.工厂方法模式;
  * @author sk
  */
 public abstract class Car {
-  public Car(){
 
-  }
+  /**
+   * 制造
+   */
+  public abstract void make();
 }
 

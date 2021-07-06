@@ -6,7 +6,8 @@ package 创建型模式_5种.工厂方法模式;
  */
 public class Bmw extends Car {
 
-  public Bmw() {
+  @Override
+  public void make() {
     System.out.println("制造-->宝马");
   }
 }

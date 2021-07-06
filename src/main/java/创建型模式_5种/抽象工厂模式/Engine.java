@@ -6,4 +6,7 @@ package 创建型模式_5种.抽象工厂模式;
  */
 public abstract  class Engine {
 
+    /** 制造 */
+    public abstract void make();
+
 }

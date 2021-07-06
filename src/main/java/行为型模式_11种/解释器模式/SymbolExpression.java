@@ -36,7 +36,6 @@ public class SymbolExpression extends Expression {
 
     @Override
     public int interpreter(HashMap<String, Integer> var) {
-        // TODO Auto-generated method stub
         return 0;
     }
 

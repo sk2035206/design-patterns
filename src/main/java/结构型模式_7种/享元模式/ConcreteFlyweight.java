@@ -7,7 +7,7 @@ package 结构型模式_7种.享元模式;
 public class ConcreteFlyweight extends Flyweight{
 
   /** 名称 */
- private Character intrinsicState;
+ private final Character intrinsicState;
 
   /**
    * 获取对象名称
@@ -18,7 +18,6 @@ public class ConcreteFlyweight extends Flyweight{
  }
  @Override
  public void operation(String state){
-   // TODO Auto-generated method stub
    System.out.println("内蕴状态 = " + this.intrinsicState);
    System.out.println("外部状态 = " + state);
  }

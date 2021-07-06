@@ -11,13 +11,17 @@ package 创建型模式_5种.抽象工厂模式;
 public class Customer {
   public static void main(String[] args){
     //生产宝马320系列配件
-    FactoryBMW320 factoryBMW320 = new FactoryBMW320();
-    factoryBMW320.createEngine();
-    factoryBMW320.createAircondition();
+    FactoryBmw320 factoryBmw320 = new FactoryBmw320();
+    Engine engine = factoryBmw320.createEngine();
+    engine.make();
+    AirCondition airCondition = factoryBmw320.createAirCondition();
+    airCondition.make();
 
     //生产宝马523系列配件
-    FactoryBMW523 factoryBMW523 = new FactoryBMW523();
-    factoryBMW523.createEngine();
-    factoryBMW523.createAircondition();
+    FactoryBmw523 factoryBmw523 = new FactoryBmw523();
+    Engine engine523 = factoryBmw523.createEngine();
+    engine523.make();
+    AirCondition airCondition523 = factoryBmw523.createAirCondition();
+    airCondition523.make();
   }
 }
